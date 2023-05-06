@@ -124,3 +124,13 @@ Location-based services: The tower location data could be used in location-based
 Competitive analysis: The dataset could be used by mobile network operators or market analysts to analyze the competition in different areas. For example, the dataset could be used to identify areas where a particular operator has a strong or weak presence.
 
 Research and development: The dataset could be used by researchers and developers to develop new technologies or services related to mobile networks. For example, the dataset could be used to study the impact of tower height or location on network performance or to develop new algorithms for network optimization.
+
+
+
+
+DEMO:
+
+<img width="1404" alt="image" src="https://user-images.githubusercontent.com/35470559/236636690-ddfdf553-d8c2-49c6-8165-ed7b9c68960f.png">
+
+
+<img width="1404" alt="image" src="https://user-images.githubusercontent.com/35470559/236636724-82be250b-573d-49a9-bb17-905a8cf14969.png">
