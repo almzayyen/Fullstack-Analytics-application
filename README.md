@@ -101,8 +101,7 @@ Security needs to be added as well but the endpoint is public and nothing sensit
 Better documentation for all components creating a summary of the whole project
 
 
-I started creating a Dockerized version of the project but didn't finish in time, I created a docker image that correctly deployed the backend but needed to add another image for the frontend and a docker-compose file to combine them together since trying to use one image for both wasn't viable and isn't good practice anyways.
-
+I created a Dockerfile for each of the frontend and the backend. They work individually, didn't get a chance to create a docker-compose tha combines them both. Was able to test the backend and it works. 
 
 
 
