@@ -1,0 +1,12 @@
+FROM maven:3.8.4-jdk-8 AS build
+WORKDIR /app
+COPY spring-boot-server/pom.xml .
+RUN mvn dependency:go-offline
+COPY ./spring-boot-server/src ./src
+RUN mvn clean package -DskipTests
+
+FROM openjdk:8-jre-alpine
+WORKDIR /app
+COPY --from=build /app/target/spring-boot-towerdata-demo-0.0.1-SNAPSHOT.jar .
+EXPOSE 8080 
+CMD ["java", "-jar", "../spring-boot-towerdata-demo-0.0.1-SNAPSHOT.jar"]
