@@ -1,0 +1,12 @@
+<div class="container">
+    <button (click)="toggleView()">Toggle View</button>
+  
+    <div *ngIf="showChart">
+      <app-towers-chart></app-towers-chart>
+    </div>
+  
+    <div *ngIf="!showChart">
+      <app-tower-table></app-tower-table>
+    </div>
+  </div>
+  
