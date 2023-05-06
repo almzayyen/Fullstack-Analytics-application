@@ -1,12 +1,23 @@
 <div class="container">
-    <button (click)="toggleView()">Toggle View</button>
-  
-    <div *ngIf="showChart">
-      <app-towers-chart></app-towers-chart>
-    </div>
-  
-    <div *ngIf="!showChart">
-      <app-tower-table></app-tower-table>
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-primary" (click)="toggleView()">
+        {{ showChart ? 'Switch to Table View' : 'Switch to Chart View'}}
+      </button>
     </div>
   </div>
-  
+
+  <div class="row mt-4">
+    <div class="col">
+      <div *ngIf="showChart">
+        <h3 class="mb-4">Tower Locations</h3>
+        <app-towers-chart></app-towers-chart>
+      </div>
+
+      <div *ngIf="!showChart">
+        <h3 class="mb-4">Tower Data Table</h3>
+        <app-tower-table></app-tower-table>
+      </div>
+    </div>
+  </div>
+</div>
